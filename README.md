@@ -29,3 +29,6 @@ This repository documents my practical hands-on work from the [Summit room on Tr
 | Sample 4 | Registry artifact detection | Sigma rule + Sysmon |
 | Sample 5 | Network pattern detection | Sigma rule for periodic C2 |
 | Sample 6 | File exfil pattern | File creation Sigma rule |
+
+ I’m continuing to grow as a Blue Team professional and Detection Engineer. Let’s connect!
+**Connect with me**: https://www.linkedin.com/in/sohn-sayndee-ab3182355/(#) |thepsalmisst33@gmail.com (#)  
