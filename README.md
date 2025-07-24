@@ -1,52 +1,31 @@
-# SOC-analyst-tryhackme-Docs-1
-# 🏔️ TryHackMe: Summit – SOC Analyst Report
+# TryHackMe: Summit Room – Detection Engineering & Purple Team Project
 
-## 📌 Module Name:
-**TryHackMe – Summit**
+This repository documents my practical hands-on work from the [Summit room on TryHackMe](https://tryhackme.com/room/summit?utm_source=linkedin&utm_medium=social&utm_campaign=social_share&utm_content=room). This lab simulates real-world adversary behavior and challenges you to detect and block malicious actions using defensive tools and strategies.
 
-## 🔎 Overview:
-The Summit room simulates a realistic SOC investigation scenario. In this module, I acted as a Level 1 SOC Analyst tasked with analyzing artifacts from a potential cyber incident, gathering evidence, and understanding the attack flow using real-world techniques.
+## ✅ Completion
 
----
+🔗 [Room Completed on TryHackMe](https://tryhackme.com/room/summit?utm_source=linkedin&utm_medium=social&utm_campaign=social_share&utm_content=room)
 
-## 🛠️ Hands-On Skills Learned:
-- Investigated phishing attacks and initial access vectors
-- Reviewed browser history and email activity
-- Analyzed PowerShell execution artifacts
-- Identified malicious file downloads and IOCs
-- Applied MITRE ATT&CK mappings to adversary behavior
-- Tracked persistence and lateral movement indicators
-- Documented and reported findings like a SOC pro
+## Skills Gained
 
----
+- Malware sandbox analysis
+- Defense building using the **Pyramid of Pain** framework
+- Hash-based detection and mitigation
+- Firewall and DNS-based blocking
+- Writing Sigma rules for:
+  - Registry changes
+  - Network anomalies
+  - File creation events
+- Detection of MITRE ATT&CK TTPs
+- Practical blue-team defense escalation techniques
 
-## 🎓 Key Takeaways:
-- Learned how to correlate different logs and evidence into a clear timeline
-- Strengthened my incident response workflow using real data
-- Better understood attacker methodology (from phishing to post-exploitation)
-- Gained hands-on experience writing a report from analyst perspective
+## Learning Progression
 
----
-
-## 🧠 Why This Matters for a SOC Analyst Role:
-This module helped me:
-- Sharpen my analytical thinking under pressure
-- Learn how to identify red flags from limited evidence
-- Build the habit of using frameworks like MITRE ATT&CK to classify threats
-- Practice writing concise, actionable incident documentation
-- Understand the importance of early detection, logging, and communication
-
----
-
-## 🛡️ Tools/Concepts Used:
-- MITRE ATT&CK Framework
-- PowerShell Analysis
-- IOC Hunting
-- Incident Timeline Creation
-- Log Correlation Techniques
-
----
-
-## 🔗 TryHackMe Room:
-[Summit – TryHackMe](https://tryhackme.com/room/summit)
-https://tryhackme.com/room/summit?utm_source=linkedin&utm_medium=social&utm_campaign=social_share&utm_content=room
+| Challenge | Skill Demonstrated | Tool/Strategy Used |
+|----------|--------------------|--------------------|
+| Sample 1 | Static hash detection | SHA-256 hash block |
+| Sample 2 | IP-based network block | Egress firewall rule |
+| Sample 3 | Domain filtering | DNS-based blocking |
+| Sample 4 | Registry artifact detection | Sigma rule + Sysmon |
+| Sample 5 | Network pattern detection | Sigma rule for periodic C2 |
+| Sample 6 | File exfil pattern | File creation Sigma rule |
