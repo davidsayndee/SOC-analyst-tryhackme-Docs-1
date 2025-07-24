@@ -1,0 +1,47 @@
+## Summary
+
+The Summit module challenged me to think like both an attacker and defender by escalating my detection strategies from simple hash blocking to advanced behavior-based rules. This experience sharpened my blue-team capabilities and detection engineering mindset.
+
+I am confident working with:
+- Sysmon logs
+- Sigma rule creation
+- MITRE ATT&CK mapping
+- Firewall & DNS configurations
+
+> I’m continuing to grow as a Blue Team professional and Detection Engineer. Let’s connect!
+
+
+📫 **Connect with me**: https://www.linkedin.com/in/sohn-sayndee-ab3182355/(#) |thepsalmisst33@gmail.com (#)  
+
+
+title: Disable Windows Defender Real-Time Monitoring
+id: d1a5beac-1234-4567-8910-abcdef123456
+description: Detects when Defender is disabled via registry
+status: experimental
+logsource:
+  product: windows
+  service: sysmon
+detection:
+  selection:
+    EventID: 13
+    TargetObject: '*DisableRealtimeMonitoring*'
+  condition: selection
+level: high
+tags:
+  - attack.defense_evasion
+  - attack.t1562.001
+
+title: Detect Suspicious DNS Query
+logsource:
+  product: windows
+  service: sysmon
+detection:
+  selection:
+    EventID: 22
+    QueryName|contains: 
+      - "bresonicz.info"
+  condition: selection
+level: medium
+tags:
+  - attack.command_and_control
+  - attack.t1071.004
